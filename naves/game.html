@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title>Game</title>
+<head>
+<script type="text/javascript" src = "app.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<script>
+</script>
+</head>
+<body onload="playMusic()">
+
+  <audio id="myAudio">
+    <source src="music/songs.mp3" type="audio/mpeg">
+    <!-- Añade más etiquetas <source> para diferentes formatos de audio si es necesario -->
+    Tu navegador no admite la reproducción de audio.
+  </audio>
+
+  <script>
+    var audio = document.getElementById("myAudio");
+
+    function playMusic() {
+      audio.play();
+    }
+
+    function pauseMusic() {
+      audio.pause();
+    }
+    window.onload = playMusic;
+  </script>
+
+  <div class="container">
+    <canvas id="my_canvas" width="700" height="600"></canvas>
+    <h3 class="barra"></h3>
+    <div>
+      <button class = "boton" id="left_btn">Izquierda</button>
+      <button class = "boton" id="fire_btn">Disparar</button>
+      <button class = "boton" id="right_btn">Derecha</button>
+      <button class = "boton" id="right_btn" onclick="playMusic()">Reproducir</button>
+      <button class = "boton" id="right_btn" onclick="pauseMusic()">Pausar Musica</button>
+    </div>
+  </div>
+</body>  
+</html>

@@ -1,0 +1,54 @@
+body { margin:10px; 
+  /*background-image: url("../images/wall.jpg"); */
+  background-color: #070202fc ;
+}
+
+body {
+  zoom: 75%; /* Establece el tamaño de la página al 75% */
+  /* o puedes utilizar:
+  font-size: 75%; /* Ajusta el tamaño de la fuente al 75% */
+}
+
+
+.container {
+  width:800px;
+  margin:0 auto;
+}
+
+.barra {
+  background-color:#000000;
+  color: #ffffff;
+  font-size: 20px;
+  height: 20px; width: 700px;
+}
+#my_canvas{ 
+  background:#000000; 
+  border:#000 1px solid; 
+}
+.boton{
+    color:rgb(119, 236, 103);
+    font-size: 30px;
+    background-color: #000000;
+    cursor: pointer;
+    border-radius: 8px;
+    border:2px solid blue;
+}
+.boton:hover{
+    background-color: white;
+    color: #000000;
+}
+#slideshow-container {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
